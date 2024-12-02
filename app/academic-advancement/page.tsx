@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export default function AcademicAdvancement() {
   return (
-    <div className="max-w-md mx-auto bg-gradient-to-b from-blue-100 to-indigo-50 min-h-screen pb-4">
+    <div className="max-w-md mx-auto bg-gradient-to-b from-blue-100 to-indigo-50 min-h-screen pb-16">
       {/* Header */}
       <header className="p-4 flex items-center gap-4">
         <Link href="/" passHref>
@@ -17,11 +17,11 @@ export default function AcademicAdvancement() {
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
         </Link>
-        <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" alt="Academic Logo" width={40} height={40} className="w-10" />
+        <Image src="/placeholder.svg" alt="Academic Logo" width={40} height={40} className="w-10" />
         <div className="flex-1 relative">
           <Input 
             type="search" 
-            placeholder="搜索学习内容" 
+            placeholder="搜索学历课程" 
             className="w-full pl-10 pr-4 py-2 rounded-full bg-white"
           />
           <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -31,12 +31,12 @@ export default function AcademicAdvancement() {
       {/* Navigation Pills */}
       <div className="flex gap-2 px-4 overflow-x-auto no-scrollbar">
         <Badge variant="secondary" className="bg-blue-100 text-blue-500 hover:bg-blue-200">
-          全部课程
+          本科
         </Badge>
-        <Badge variant="secondary" className="whitespace-nowrap">语文</Badge>
-        <Badge variant="secondary" className="whitespace-nowrap">数学</Badge>
-        <Badge variant="secondary" className="whitespace-nowrap">英语</Badge>
-        <Badge variant="secondary" className="whitespace-nowrap">科学</Badge>
+        <Badge variant="secondary" className="whitespace-nowrap">研究生</Badge>
+        <Badge variant="secondary" className="whitespace-nowrap">专科升本科</Badge>
+        <Badge variant="secondary" className="whitespace-nowrap">在职研究生</Badge>
+        <Badge variant="secondary" className="whitespace-nowrap">国外学历</Badge>
       </div>
 
       {/* Banner */}
@@ -44,8 +44,8 @@ export default function AcademicAdvancement() {
         <div className="bg-gradient-to-r from-blue-200 to-indigo-200 rounded-lg p-4">
           <h2 className="text-lg font-bold mb-2">学历提升助力职业发展</h2>
           <div className="flex gap-2">
-            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" alt="Academic Courses" width={100} height={100} className="rounded" />
-            <Image src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" alt="Career Growth" width={100} height={100} className="rounded" />
+            <Image src="/placeholder.svg" alt="Academic Courses" width={100} height={100} className="rounded" />
+            <Image src="/placeholder.svg" alt="Career Growth" width={100} height={100} className="rounded" />
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function AcademicAdvancement() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Image 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" 
+                src="/placeholder.svg" 
                 alt="MBA Program" 
                 width={150} 
                 height={150} 
@@ -97,7 +97,7 @@ export default function AcademicAdvancement() {
             </div>
             <div className="space-y-2">
               <Image 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" 
+                src="/placeholder.svg" 
                 alt="Computer Science Degree" 
                 width={150} 
                 height={150} 
@@ -135,7 +135,7 @@ export default function AcademicAdvancement() {
         <h3 className="font-bold mb-4">学员成功案例</h3>
         <div className="grid grid-cols-2 gap-4">
           <Image 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" 
+            src="/placeholder.svg" 
             alt="Success Story 1" 
             width={200} 
             height={200} 
@@ -143,14 +143,14 @@ export default function AcademicAdvancement() {
           />
           <div className="grid gap-4">
             <Image 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" 
+              src="/placeholder.svg" 
               alt="Success Story 2" 
               width={100} 
               height={100} 
               className="w-full rounded-lg"
             />
             <Image 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NNB5zC6TU422hfhAiySMZokgQ11Pm0.png" 
+              src="/placeholder.svg" 
               alt="Success Story 3" 
               width={100} 
               height={100} 
@@ -161,7 +161,7 @@ export default function AcademicAdvancement() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="bg-white border-t border-gray-200 mx-4 mt-4 rounded-lg">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
         <div className="grid grid-cols-5 px-2 py-1">
           <Link href="/" passHref>
             <Button variant="ghost" className="flex flex-col items-center gap-0.5">
@@ -169,26 +169,18 @@ export default function AcademicAdvancement() {
               <span className="text-xs">首页</span>
             </Button>
           </Link>
-          <Link href="/activities" passHref>
-            <Button variant="ghost" className="flex flex-col items-center gap-0.5">
-              <Zap className="h-5 w-5" />
-              <span className="text-xs">活动</span>
-            </Button>
-          </Link>
-          <Button variant="ghost" className="flex flex-col items-center gap-0.5 bg-gray-100">
+          <Button variant="ghost" className="flex flex-col items-center gap-0.5">
+            <Zap className="h-5 w-5" />
+            <span className="text-xs">活动</span>
+          </Button>
+          <Button variant="ghost" className="flex flex-col items-center gap-0.5">
             <UserCircle className="h-5 w-5" />
-            <span className="text-xs">我的学习</span>
+            <span className="text-xs">会员中心</span>
           </Button>
           <Button variant="ghost" className="flex flex-col items-center gap-0.5">
             <BookOpen className="h-5 w-5" />
             <span className="text-xs">学习中心</span>
           </Button>
-          <Link href="/learning-center" passHref>
-            <Button variant="ghost" className="flex flex-col items-center gap-0.5">
-              <BookOpen className="h-5 w-5" />
-              <span className="text-xs">学习中心</span>
-            </Button>
-          </Link>
           <Button variant="ghost" className="flex flex-col items-center gap-0.5">
             <ShoppingCart className="h-5 w-5" />
             <span className="text-xs">我的课程</span>
